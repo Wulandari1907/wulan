@@ -1,0 +1,119 @@
+/* Reset dan font */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.5s ease;
+}
+
+/* Header dan navigasi */
+header {
+  background: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main section */
+main {
+  position: relative;
+  height: 85vh;
+  overflow: hidden;
+}
+
+/* Animasi slide antar section */
+.section {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #f0f0f0;
+  padding: 40px;
+  box-sizing: border-box;
+  transition: left 0.5s ease;
+}
+
+.section.active {
+  left: 0;
+}
+
+/* Layout halaman home dengan gambar */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.home-container .text {
+  flex: 1;
+  padding: 20px;
+}
+
+.home-container .image {
+  flex: 1;
+  text-align: center;
+}
+
+.home-container .image img {
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sosial media */
+.social-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.social {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.social.tiktok {
+  background: #010101;
+}
+
+.social.instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf);
+}
+
+.social.facebook {
+  background: #3b5998;
+}
+
+.social:hover {
+  opacity: 0.8;
+}
